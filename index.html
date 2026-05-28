@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보처리방침 — EV 충전 기록</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #1a1a1a;
+      background: #f9f9f9;
+    }
+    .wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 48px 32px 80px;
+    }
+    header {
+      border-left: 4px solid #00C853;
+      padding-left: 16px;
+      margin-bottom: 40px;
+    }
+    header h1 { font-size: 24px; font-weight: 700; color: #00C853; }
+    header p  { font-size: 14px; color: #666; margin-top: 6px; }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 36px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    p   { margin-bottom: 12px; }
+    ul  { padding-left: 20px; margin-bottom: 12px; }
+    li  { margin-bottom: 6px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px 14px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f4f4f4; font-weight: 600; }
+    .highlight {
+      background: #f0fdf4;
+      border-left: 3px solid #00C853;
+      padding: 14px 18px;
+      border-radius: 4px;
+      margin: 16px 0;
+      font-size: 15px;
+    }
+    a { color: #00C853; }
+    footer {
+      margin-top: 60px;
+      font-size: 13px;
+      color: #999;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+    }
+    @media (max-width: 600px) {
+      .wrap { padding: 24px 16px 60px; }
+      table { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>개인정보처리방침</h1>
+    <p>앱명: EV 충전 기록 &nbsp;|&nbsp; 패키지: com.jinifly.ev_charging_tracker<br>
+       시행일: 2026년 6월 1일 &nbsp;|&nbsp; 최종 수정: 2026년 6월 1일</p>
+  </header>
+
+  <div class="highlight">
+    EV 충전 기록(이하 "앱")은 사용자의 개인정보를 소중히 여깁니다.<br>
+    앱은 별도 서버를 운영하지 않으며, 모든 충전 기록은 <strong>기기 내에만</strong> 저장됩니다.
+  </div>
+
+  <!-- 1 -->
+  <h2>1. 수집하는 정보 및 목적</h2>
+  <table>
+    <thead>
+      <tr><th>구분</th><th>수집 정보</th><th>목적</th><th>처리 주체</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>충전 기록</td>
+        <td>날짜, 충전소명, 충전량(kWh), 금액, 사업자명</td>
+        <td>앱 기능 제공 (기기 내 로컬 저장)</td>
+        <td>앱 자체 (서버 전송 없음)</td>
+      </tr>
+      <tr>
+        <td>Google Drive 백업</td>
+        <td>Drive 파일 생성·읽기 권한<br>(백업 파일만 접근)</td>
+        <td>사용자 요청 시 충전 기록 백업·복원</td>
+        <td>Google LLC</td>
+      </tr>
+      <tr>
+        <td>광고 (AdMob)</td>
+        <td>광고 식별자(GAID), 기기 정보, IP 주소</td>
+        <td>맞춤형 배너 광고 노출</td>
+        <td>Google LLC (AdMob)</td>
+      </tr>
+      <tr>
+        <td>앱 사용 통계</td>
+        <td>화면 조회, 버튼 클릭 등 익명 이벤트</td>
+        <td>앱 품질 개선 (Firebase Analytics)</td>
+        <td>Google LLC (Firebase)</td>
+      </tr>
+      <tr>
+        <td>OCR (카메라)</td>
+        <td>사용자가 직접 촬영한 충전 영수증 이미지</td>
+        <td>영수증 텍스트 자동 인식 후 즉시 삭제</td>
+        <td>Google ML Kit (기기 내 처리)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 2 -->
+  <h2>2. 개인정보의 보관 및 파기</h2>
+  <ul>
+    <li>충전 기록: 사용자가 직접 삭제하거나 앱을 제거할 때까지 기기 내 보관</li>
+    <li>Google Drive 백업 파일: 사용자가 Drive에서 직접 삭제하기 전까지 보관</li>
+    <li>OCR 이미지: 텍스트 인식 완료 즉시 삭제 (서버 전송 없음)</li>
+    <li>광고·분석 데이터: Google의 데이터 보존 정책에 따름</li>
+  </ul>
+
+  <!-- 3 -->
+  <h2>3. 제3자 제공 및 위탁</h2>
+  <p>앱은 수집된 정보를 아래 제3자에게 위탁하여 서비스를 제공합니다.</p>
+  <table>
+    <thead>
+      <tr><th>수탁자</th><th>위탁 내용</th><th>개인정보처리방침</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Google LLC</td>
+        <td>Drive 백업, 광고(AdMob), 분석(Firebase), ML Kit OCR</td>
+        <td><a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>위 경우 외에는 사용자의 동의 없이 개인정보를 제3자에게 제공하지 않습니다.</p>
+
+  <!-- 4 -->
+  <h2>4. 사용자 권리</h2>
+  <ul>
+    <li><strong>기록 삭제</strong>: 앱 내 '삭제' 기능 또는 앱 제거로 모든 로컬 데이터 삭제</li>
+    <li><strong>Drive 백업 삭제</strong>: Google Drive에서 직접 백업 파일 삭제</li>
+    <li><strong>광고 개인화 거부</strong>: 기기 설정 → Google → 광고 → 광고 개인화 선택 해제</li>
+    <li><strong>Google 계정 연결 해제</strong>: 앱 설정에서 Google 로그아웃</li>
+  </ul>
+
+  <!-- 5 -->
+  <h2>5. 앱 권한 안내</h2>
+  <table>
+    <thead>
+      <tr><th>권한</th><th>사용 목적</th><th>필수 여부</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>인터넷 (INTERNET)</td>
+        <td>광고 로드, Google Drive 연동, Firebase 분석</td>
+        <td>필수</td>
+      </tr>
+      <tr>
+        <td>Google Drive (OAuth 2.0)</td>
+        <td>백업 파일 생성·읽기 (사용자 요청 시에만)</td>
+        <td>선택</td>
+      </tr>
+      <tr>
+        <td>카메라</td>
+        <td>영수증 OCR 촬영 (사용자 요청 시에만)</td>
+        <td>선택</td>
+      </tr>
+      <tr>
+        <td>스토리지 읽기</td>
+        <td>갤러리 이미지 OCR, 로컬 백업 파일 선택</td>
+        <td>선택</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 6 -->
+  <h2>6. 아동 개인정보 보호</h2>
+  <p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 의도적으로 아동의 개인정보를 수집하지 않습니다.</p>
+
+  <!-- 7 -->
+  <h2>7. 방침 변경 안내</h2>
+  <p>개인정보처리방침이 변경될 경우 앱 업데이트 또는 이 페이지를 통해 공지합니다.
+  중요한 변경은 앱 내 팝업으로 별도 안내합니다.</p>
+
+  <!-- 8 -->
+  <h2>8. 문의</h2>
+  <p>개인정보 관련 문의는 아래로 연락해 주세요.</p>
+  <ul>
+    <li>이메일: <a href="mailto:jinifly@gmail.com">jinifly@gmail.com</a></li>
+    <li>앱 패키지: com.jinifly.ev_charging_tracker</li>
+  </ul>
+
+  <footer>
+    © 2026 jinifly. 본 방침은 대한민국 「개인정보 보호법」에 따라 작성되었습니다.
+  </footer>
+
+</div>
+</body>
+</html>
